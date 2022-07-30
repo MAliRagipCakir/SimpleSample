@@ -1,4 +1,6 @@
-﻿using KonusarakOgren.DataAccess.Abstract;
+﻿using KonusarakOgren.Business.Abstract;
+using KonusarakOgren.Business.Concrete;
+using KonusarakOgren.DataAccess.Abstract;
 using KonusarakOgren.DataAccess.EntityFramework.Abstract;
 
 namespace KonusarakOgrenDemo.Mvc.Extensions
@@ -21,7 +23,7 @@ namespace KonusarakOgrenDemo.Mvc.Extensions
             services.AddScoped <IStoreRepository, StoreRepository> ();
             services.AddScoped <IVariantRepository, VariantRepository> ();
 
-            //services.AddScoped <, > ();
+            services.AddScoped <IProductService, ProductService> ();
         }
     }
 }
