@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace KonusarakOgren.Core.Abstract.Entities
 {
+    // Nesnelerin takibi için kullanılabilir
     public interface IAudited
     {
-        Status Status { get; set; }
         string CreatedBy { get; set; }
         DateTime CreatedDate { get; set; }
         string ModifiedBy { get; set; }

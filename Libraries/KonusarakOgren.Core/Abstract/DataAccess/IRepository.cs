@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace KonusarakOgren.Core.Abstract.DataAccess
 {
-    public interface IRepository<T> where T : class, IBaseEntity
+    public interface IRepository<T,Key> where T : class, IBaseEntity
     {
         Task<bool> Add(T entity);
         Task<bool> Any(Expression<Func<T, bool>> expression);
@@ -18,7 +18,7 @@ namespace KonusarakOgren.Core.Abstract.DataAccess
         Task<List<T>> GetAll();
         Task<List<T>> GetAll(Expression<Func<T, bool>> expression);
         Task<T> Get(Expression<Func<T, bool>> expression);
-        Task<T> GetByID(Guid id);
+        Task<T> GetById(Key id);
         Task<int> Save();
     }
 }

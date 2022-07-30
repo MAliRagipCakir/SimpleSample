@@ -7,7 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{72711EE5-9997-4DE7-9511-C1B41278F69D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KonusarakOgrenDemo.Mvc", "Presentation\KonusarakOgrenDemo.Mvc\KonusarakOgrenDemo.Mvc.csproj", "{4D54E26D-482E-43DB-9699-56120AAFF3DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KonusarakOgrenDemo.Mvc", "Presentation\KonusarakOgrenDemo.Mvc\KonusarakOgrenDemo.Mvc.csproj", "{4D54E26D-482E-43DB-9699-56120AAFF3DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KonusarakOgren.Business", "Libraries\KonusarakOgren.Business\KonusarakOgren.Business.csproj", "{7DE92305-F40C-4151-905D-4BA0D5F6E835}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KonusarakOgren.DataAccess", "Libraries\KonusarakOgren.DataAccess\KonusarakOgren.DataAccess.csproj", "{E88EF853-1C50-4D7F-80B6-DF0FEBEC40FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KonusarakOgren.Core", "Libraries\KonusarakOgren.Core\KonusarakOgren.Core.csproj", "{20283C19-3D9F-4335-898B-74A8AF3CF133}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KonusarakOgren.Entities", "Libraries\KonusarakOgren.Entities\KonusarakOgren.Entities.csproj", "{2BF4428C-C3D0-43CE-8312-062FEA302DDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,12 +27,32 @@ Global
 		{4D54E26D-482E-43DB-9699-56120AAFF3DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D54E26D-482E-43DB-9699-56120AAFF3DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D54E26D-482E-43DB-9699-56120AAFF3DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DE92305-F40C-4151-905D-4BA0D5F6E835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DE92305-F40C-4151-905D-4BA0D5F6E835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DE92305-F40C-4151-905D-4BA0D5F6E835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DE92305-F40C-4151-905D-4BA0D5F6E835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E88EF853-1C50-4D7F-80B6-DF0FEBEC40FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E88EF853-1C50-4D7F-80B6-DF0FEBEC40FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E88EF853-1C50-4D7F-80B6-DF0FEBEC40FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E88EF853-1C50-4D7F-80B6-DF0FEBEC40FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20283C19-3D9F-4335-898B-74A8AF3CF133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20283C19-3D9F-4335-898B-74A8AF3CF133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20283C19-3D9F-4335-898B-74A8AF3CF133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20283C19-3D9F-4335-898B-74A8AF3CF133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BF4428C-C3D0-43CE-8312-062FEA302DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BF4428C-C3D0-43CE-8312-062FEA302DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BF4428C-C3D0-43CE-8312-062FEA302DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BF4428C-C3D0-43CE-8312-062FEA302DDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4D54E26D-482E-43DB-9699-56120AAFF3DB} = {72711EE5-9997-4DE7-9511-C1B41278F69D}
+		{7DE92305-F40C-4151-905D-4BA0D5F6E835} = {770B9C3A-05A3-4CAE-9F98-49A954C7BA8E}
+		{E88EF853-1C50-4D7F-80B6-DF0FEBEC40FB} = {770B9C3A-05A3-4CAE-9F98-49A954C7BA8E}
+		{20283C19-3D9F-4335-898B-74A8AF3CF133} = {770B9C3A-05A3-4CAE-9F98-49A954C7BA8E}
+		{2BF4428C-C3D0-43CE-8312-062FEA302DDD} = {770B9C3A-05A3-4CAE-9F98-49A954C7BA8E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8FF85D6E-5369-42A7-9123-09EB19E5AA1D}
