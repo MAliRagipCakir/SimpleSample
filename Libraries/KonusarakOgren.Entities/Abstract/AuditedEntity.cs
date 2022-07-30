@@ -20,7 +20,5 @@ namespace KonusarakOgren.Entities.Abstract
         }
         public string? ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
-        public string? DeletedBy { get; set; }
-        public DateTime? DeletedDate { get; set; }
     }
 }

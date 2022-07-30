@@ -19,8 +19,6 @@ namespace KonusarakOgren.DataAccess.EntityFramework.Configs
             builder.Property(a => a.CreatedBy).IsRequired(false);
             builder.Property(a => a.ModifiedDate).IsRequired(false);
             builder.Property(a => a.ModifiedDate).IsRequired(false);
-            builder.Property(a => a.DeletedDate).IsRequired(false);
-            builder.Property(a => a.DeletedDate).IsRequired(false);
 
             builder.HasOne<Cart>().WithOne(x => x.User).HasForeignKey<Cart>(x => x.UserId).IsRequired(true);
             builder.HasOne<Store>().WithOne(x => x.User).HasForeignKey<Store>(x => x.UserId).IsRequired(true);

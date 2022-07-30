@@ -14,7 +14,5 @@ namespace KonusarakOgren.Core.Abstract.Entities
         DateTime CreatedDate { get; set; }
         string ModifiedBy { get; set; }
         DateTime? ModifiedDate { get; set; }
-        string DeletedBy { get; set; }
-        DateTime? DeletedDate { get; set; }
     }
 }

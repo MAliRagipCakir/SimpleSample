@@ -22,8 +22,6 @@ namespace KonusarakOgren.Entities.Concrete
         }
         public string? ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
-        public string? DeletedBy { get; set; }
-        public DateTime? DeletedDate { get; set; }
 
 
         public virtual List<Comment> Comments { get; set; } = new List<Comment>();

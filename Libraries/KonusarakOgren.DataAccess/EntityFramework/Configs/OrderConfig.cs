@@ -15,6 +15,11 @@ namespace KonusarakOgren.DataAccess.EntityFramework.Configs
         {
             builder.HasKey(x => x.Id);
 
+            builder.Property(a => a.CreatedDate).IsRequired(true).HasDefaultValue(DateTime.Now);
+            builder.Property(a => a.CreatedBy).IsRequired(false);
+            builder.Property(a => a.ModifiedDate).IsRequired(false);
+            builder.Property(a => a.ModifiedDate).IsRequired(false);
+
             builder.Property(x => x.TotalPrice).HasPrecision(18, 2);
 
             builder.HasMany(x => x.OrderItems).WithOne().HasForeignKey(x => x.OrderId).IsRequired();

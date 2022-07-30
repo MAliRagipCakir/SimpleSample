@@ -1,4 +1,5 @@
 ﻿using KonusarakOgren.DataAccess.EntityFramework.Configs;
+using KonusarakOgren.DataAccess.EntityFramework.Seed;
 using KonusarakOgren.Entities.Concrete;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -49,6 +50,8 @@ namespace KonusarakOgren.DataAccess.EntityFramework.Context
             builder.ApplyConfiguration(new ProductConfig());
             builder.ApplyConfiguration(new StoreConfig());
             builder.ApplyConfiguration(new VariantConfig());
+
+            builder.ApplyConfiguration(new AppRoleSeed());
             //builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             base.OnModelCreating(builder);
         }

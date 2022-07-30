@@ -16,6 +16,11 @@ namespace KonusarakOgren.DataAccess.EntityFramework.Configs
         {
             builder.HasKey(x => x.Id);
 
+            builder.Property(a => a.CreatedDate).IsRequired(true).HasDefaultValue(DateTime.Now);
+            builder.Property(a => a.CreatedBy).IsRequired(false);
+            builder.Property(a => a.ModifiedDate).IsRequired(false);
+            builder.Property(a => a.ModifiedDate).IsRequired(false);
+
             builder.Property(x => x.Title).IsRequired().HasMaxLength(CommentConsts.MaxTitleLength);
             builder.Property(x => x.Content).IsRequired().HasMaxLength(CommentConsts.MaxContentLength);
 

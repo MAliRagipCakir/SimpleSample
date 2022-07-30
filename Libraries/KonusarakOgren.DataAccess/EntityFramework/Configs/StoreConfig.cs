@@ -16,6 +16,11 @@ namespace KonusarakOgren.DataAccess.EntityFramework.Configs
         {
             builder.HasKey(x => x.Id);
 
+            builder.Property(a => a.CreatedDate).IsRequired(true).HasDefaultValue(DateTime.Now);
+            builder.Property(a => a.CreatedBy).IsRequired(false);
+            builder.Property(a => a.ModifiedDate).IsRequired(false);
+            builder.Property(a => a.ModifiedDate).IsRequired(false);
+
             builder.Property(x => x.Name).IsRequired().HasMaxLength(StoreConsts.MaxNameLength);
 
             builder.HasOne(x => x.User).WithOne().HasForeignKey<Store>(x => x.UserId).IsRequired().OnDelete(DeleteBehavior.NoAction);
